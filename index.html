@@ -346,11 +346,13 @@
   .hero h1 em { font-style: normal; font-weight: 700; color: var(--blue); }
   .hero h1 .num { font-feature-settings: "lnum"; font-weight: 700; }
   .hero .deck {
-    font-size: 22px; line-height: 1.45; max-width: 760px;
+    font-size: 22px; line-height: 1.55; max-width: 760px;
     color: var(--ink-soft); font-weight: 400;
-    margin: 0 0 44px;
+    margin: 0 0 24px;
     text-wrap: pretty;
   }
+  .hero .deck.deck-small { font-size: 18px; color: var(--muted); margin-bottom: 44px; }
+  .hero .deck:last-of-type { margin-bottom: 44px; }
 
   .hero-meta {
     display: grid;
@@ -1150,6 +1152,8 @@
     .gutter { position: static; max-height: none; overflow-y: visible; }
     .hero { padding: 36px 0 28px; }
     .hero h1 { font-size: clamp(32px, 8vw, 44px); }
+    .hero .deck { font-size: 17px; line-height: 1.6; margin-bottom: 18px; }
+    .hero .deck.deck-small { font-size: 15px; margin-bottom: 28px; }
     .hero-meta { grid-template-columns: 1fr 1fr; gap: 18px; }
     section.s { padding: 48px 0; }
     .trims { grid-template-columns: 1fr; border: none; }
@@ -1291,9 +1295,9 @@
   <div class="wrap">
     <div class="eyebrow"><span class="pip"></span> Buying Guide, Subaru of Las Vegas</div>
     <h1>Your guide to buying a Subaru in Las Vegas. <em>Without the theater.</em></h1>
-    <p class="deck">Most of buying a car is theater. The pacing, the back-and-forth, the manager who has to "go check on something," the moment in the finance office when a number that was never mentioned suddenly appears on a printout. None of it serves the customer. All of it is performance.</p>
-    <p class="deck" style="margin-top:-28px; font-size:18px;">Findlay Subaru of Las Vegas built its whole operation around removing that performance. The out-the-door price is in writing on the first conversation. The doc fee is $499 and it is the same number on the desk and in the finance office. The consultant who walks you to the BRZ in the showroom is the consultant who hands you the keys. We call it the Stress Free Zone.</p>
-    <p class="deck" style="margin-top:-28px; font-size:18px;">This guide walks through what buying a Subaru here actually looks like.</p>
+    <p class="deck">Most of buying a car is theater. The pacing, the back-and-forth, the surprise number on the finance printout. None of it serves the customer.</p>
+    <p class="deck">Findlay Subaru of Las Vegas built its whole operation around removing that performance. We call it the Stress Free Zone.</p>
+    <p class="deck deck-small">Out-the-door price in writing. $499 doc fee, the same on the desk and in finance. The same consultant from hello to keys.</p>
 
     <div class="hero-meta">
       <div class="item"><div class="lbl">Address</div><div class="val">6455 Roy Horn Way<small>Las Vegas, NV 89118</small></div></div>
